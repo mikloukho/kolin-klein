@@ -51,6 +51,8 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   name: 'BaseFooter',
 
@@ -88,7 +90,11 @@ export default {
   },
 
   mounted() {
-    document.addEventListener('scroll', this.handleScroll)
+      axios.get("/hello", ).then((r) => {
+          let data = r.data;
+          console.log(data);
+      });
+      document.addEventListener('scroll', this.handleScroll)
   },
 
   unmounted() {

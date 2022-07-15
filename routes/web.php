@@ -12,6 +12,5 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::middleware(['auth:sanctum'])->get('/hello', fn() => 'Hello world');
-
+Route::middleware(['auth:sanctum'])->get('/hello', fn() => 'Hello world auth');
 Route::get('/{any}', fn() => view('app'))->where('any', '.*');
