@@ -4,7 +4,7 @@
       <div class="container">
         <h1 class="account__title">Login form</h1>
         <div class="account__form">
-          <form action="">
+          <form action="/login">
             <input
               type="text"
               class="txt txt--left"

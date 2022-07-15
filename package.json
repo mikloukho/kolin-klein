@@ -1,0 +1,6 @@
+{
+    "scripts": {
+        "serve": "npm --prefix ./resources/frontend run serve",
+        "build": "npm --prefix ./resources/frontend run build"
+    }
+}
